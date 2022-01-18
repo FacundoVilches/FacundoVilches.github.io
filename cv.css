@@ -46,6 +46,10 @@ body {
     padding: 35px;
 }
 
+.leftSide .download {
+    display: none;
+}
+
 .profileText {
     position: relative;
     display: flex;
@@ -293,4 +297,75 @@ p {
     color: #03a9f4;
     font-size: 18px;
     width: 20px;
+}
+
+@media (max-width: 1000px) {
+
+    .cont {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container {
+        /* margin: 10px; */
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .leftSide .download {
+        display: block;
+    }
+
+    .leftSide .download {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background: #e4e6e7;
+        opacity: 0.6;
+        border-radius: 15%;
+    }
+    
+    .leftSide .download:hover {
+        opacity: 1;
+    }
+    
+    .leftSide .download a button .fa{
+        color: black;
+        font-size: 20px;
+    }
+    
+    .leftSide .download a button {
+        border: 1px solid #e4e6e7;
+        border-radius: 15%;
+        box-shadow: 1px 1px 1px black;
+        padding: 3px 2px 0px 4px;
+    }
+
+    .rightSide .download {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .about .box {
+        flex-direction: column;
+    }
+
+    .about .box .yearCompany {
+        margin-bottom: 5px;
+    }
+
+    .interest ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .skills .box {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
