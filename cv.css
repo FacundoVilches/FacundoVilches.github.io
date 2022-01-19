@@ -43,7 +43,7 @@ body {
 .container .leftSide {
     position: relative;
     background: #003147;
-    padding: 35px;
+    padding: 35px 25px 35px 20px;
 }
 
 .leftSide .download {
